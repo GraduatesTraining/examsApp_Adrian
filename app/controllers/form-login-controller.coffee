@@ -16,7 +16,9 @@ angular
   .controller 'FormLoginCtrl', [
     'Login'
     'Register'
-    (Login,Register) ->
+    'localStorageService'
+    'UsersIni'
+    (Login,Register,localStorageService,UsersIni) ->
       @loginError = false
       @registerError = false
       @regFields = false
@@ -38,19 +40,3 @@ angular
         return
       return
   ]
-@users = [
-  {
-    "id":0,
-    "user":"admin"
-    "password":"1234"
-    "name":"admin"
-    "surname":"admin"
-  },
-  {
-    "id":1,
-    "user":"ahueban"
-    "password":"cognizant"
-    "name":"Adrian"
-    "surname":"Huertes"
-  }
-]

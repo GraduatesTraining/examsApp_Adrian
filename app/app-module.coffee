@@ -9,5 +9,12 @@ angular
   .module 'cognizantApp', [
     'ngRoute',
     'ui.bootstrap',
-    'home'
+    'home',
+    'LocalStorageModule'
+  ]
+  .config [
+    'localStorageServiceProvider'
+    (localStorageServiceProvider) ->
+      localStorageServiceProvider.setPrefix 'ls'
+      return
   ]
