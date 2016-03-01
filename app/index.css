@@ -1,0 +1,21 @@
+.header{
+  background-color: #eee;
+  position: fixed;
+  width: 100%;
+}
+.logo{
+  width: 20%
+}
+
+.containerLogin{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.containerLogin2{
+  border: solid 1px #ddd;
+  padding: 5%
+}
+.btnLogin{
+  width: 50%
+}
